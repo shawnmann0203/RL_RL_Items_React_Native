@@ -15,7 +15,7 @@ export const SIZES = {
     base: 8,
     font: 14,
     radius: 12,
-    padding: 24,
+    padding: 22,
 
     //font sizes
     navTitle: 25,
@@ -37,6 +37,7 @@ export const SIZES = {
 
 export const FONTS = {
 	navTitle: {fontFamily: "CarmenSans-Thin", fontSize: SIZES.navTitle},
+    largeTitleBold:{ fontFamily: "CarmenSans-SemiBold", fontSize: SIZES.h2 },
     h1: {fontFamily: "CarmenSans-SemiBold", fontSize: SIZES.h1, lineHeight: 36},
     h2: {fontFamily: "CarmenSans-SemiBold", fontSize: SIZES.h2, lineHeight: 30}, 
     h3: {fontFamily: "CarmenSans-SemiBold", fontSize: SIZES.h3, lineHeight: 22},

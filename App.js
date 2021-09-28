@@ -32,10 +32,41 @@ const App = () => {
 					component={Home}
 					options={{
 						title: 'ITEM SELECTOR',
+						headerTitleAlign: 'center',
 						headerTintColor: COLORS.lightBlue,
 						headerTitleStyle: {
 							...FONTS.navTitle
-						}
+						},
+						headerLeft: ({ onPress }) => (
+							<TouchableOpacity
+								style={{margineLeft: SIZES.padding }}
+								onPress={ onPress }
+							>
+								<Image
+									source={icons.menu}
+									resizeMode="contain"
+									style={{
+										width: 25,
+										height: 25
+									}}
+								/>
+							</TouchableOpacity>
+						),
+						headerRight: ({ onPress }) => (
+							<TouchableOpacity
+								style={{marginRight: SIZES.padding }}
+								onPress={ onPress }
+							>
+								<Image
+									source={icons.search}
+									resizeMode="contain"
+									style={{
+										width: 25,
+										height: 25
+									}}
+								/>
+							</TouchableOpacity>
+						)
 					}}
 				/>
 			</Stack.Navigator>
